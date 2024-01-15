@@ -1,8 +1,8 @@
 import React from "react";
 import shape from '../assets/gallery/shape2.png';
-import background from '../assets/gallery/section_bg1.png';
-import flower1 from '../assets/gallery/from-bottom.png';
-import flower2 from '../assets/gallery/from-top.png';
+// import background from '../assets/gallery/section_bg1.png';
+// import flower1 from '../assets/gallery/from-bottom.png';
+// import flower2 from '../assets/gallery/from-top.png';
 
 interface FunctionCardComponentProps {
     title: string;

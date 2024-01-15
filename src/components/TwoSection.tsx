@@ -1,8 +1,8 @@
 import React from "react";
 
 import firstSlide from '../assets/photos/1578103785-IMG-20230714-WA0015.jpg';
-import secondSlide from '../assets/photos/IMG-20231224-WA0014.jpg';
-import thirdSlide from '../assets/photos/IMG-20231224-WA0022.jpg';
+// import secondSlide from '../assets/photos/IMG-20231224-WA0014.jpg';
+// import thirdSlide from '../assets/photos/IMG-20231224-WA0022.jpg';
 import {Carousel} from "react-bootstrap";
 
 const TwoSection = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {CalendarHeart, Heart, HeartFill} from "react-bootstrap-icons";
+import {CalendarHeart} from "react-bootstrap-icons";
 
 const DateSection = ({text}: { text?: string }) => {
     const saveDateToCalendar = () => {
