@@ -12,10 +12,20 @@ import HeadingSection from "./components/HeadingSection";
 import SaveTheDateSection from "./components/SaveTheDateSection";
 import FunctionCardComponent from "./components/FunctionCardComponent";
 import GallerySection from "./components/GallerySection";
+import {Helmet} from "react-helmet";
 
 function App() {
     return (
         <div className="App">
+            <Helmet>
+                <title>Prash Elsa Wedding</title>
+                <meta name="description" content="Prash Elsa Wedding"/>
+                <meta name="og:description" content="Prash Elsa Wedding"/>
+                <meta name="og:title" content="Prash Elsa Wedding"/>
+                <meta name="og:image" content={"src/assets/photos/IMG-20231224-WA0014.jpg"}/>
+                <meta name="keywords" content="Prash Elsa Wedding"/>
+                <meta name="author" content="Puvistyne"/>
+            </Helmet>
             <div className="" style={{
                 //backgroundColor: '#fff7f3',
             }}>
