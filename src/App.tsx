@@ -13,6 +13,7 @@ import SaveTheDateSection from "./components/SaveTheDateSection";
 import FunctionCardComponent from "./components/FunctionCardComponent";
 import GallerySection from "./components/GallerySection";
 import {Helmet} from "react-helmet";
+import ThemeSection from "./components/ThemeSection";
 
 function App() {
     return (
@@ -69,16 +70,18 @@ function App() {
                 </div>
 
                 <div className="Row">
-                   <GallerySection/>
+                    <GallerySection/>
                 </div>
 
                 <div className="Row">
                     <HeadingSection
                         title={"Theme of the day"}
-                        subtitle={"Please come dressed in your best attire"}
+                        subtitle={"Reception - pastel"}
                     />
                 </div>
-
+                <div className="Row">
+                    <ThemeSection/>
+                </div>
 
                 <div className="Row">
                     <HeadingSection
@@ -91,10 +94,16 @@ function App() {
                     <FunctionCardComponent
                         title={"Mairie de Drancy"}
                         subtitle={"18 May 2024"}
+                        other={"point de départ : 97 avenue joffre 93700 Drancy à 12H00"}
+                        mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66cbc979f09a9:0x7a7398447e630999?sa=X&ved=2ahUKEwi-sKK9sfuDAxWkTKQEHW6CCcIQ4kB6BAhAEAA&hl=en"}
+                        mapLinkText={"Mairie de Drancy"}
                     />
                     <FunctionCardComponent
                         title={"Reception"}
                         subtitle={"18 May 2024"}
+                        other={"point de départ : 97 avenue joffre 93700 Drancy à 12H00"}
+                        mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66cbc979f09a9:0x7a7398447e630999?sa=X&ved=2ahUKEwi-sKK9sfuDAxWkTKQEHW6CCcIQ4kB6BAhAEAA&hl=en"}
+                        mapLinkText={"Mairie de Drancy"}
                     />
                 </div>
             </div>
