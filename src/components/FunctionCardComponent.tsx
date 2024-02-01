@@ -1,7 +1,7 @@
 import React from "react";
 import shape from '../assets/gallery/shape2.png';
 import {FaCocktail, FaHandPointRight, FaMapMarkerAlt} from "react-icons/fa";
-import photo1 from "../assets/photos/drancyMary.jpeg";
+
 
 interface FunctionCardComponentProps {
     title: string;

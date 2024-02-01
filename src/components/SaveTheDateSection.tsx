@@ -59,40 +59,40 @@ const SaveTheDateSection = ({targetDate}: SaveTheDateSectionProps) => {
                              backgroundPosition: 'center',
                              fontFamily: '"Caveat", cursive', // Caveat font
                              fontSize: '2rem',
-                             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
+                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)'
                          }}
                     >
                         <div className="row justify-content-center"
                             style={{
-                                color: '#f8c2f7',
+                                color: '#ffffff',
                             }}
                         >
-                            <div className="col-lg-12 col-md-12">
+                            <div className="col-12 col-d-12">
                                 <div className="count-down-wrapper"
                                      data-background="assets/img/gallery/section_bg2.png">
                                     <div className="row justify-content-between">
-                                        <div className="col-lg-3 col-md-6 col-sm-6">
+                                        <div className="col-3 ">
                                             <div className="single-counter text-center">
                                                 <span className="counter">{timeLeft.days}</span>
-                                                <p>days</p>
+                                                <p className="small">days</p>
                                             </div>
                                         </div>
-                                        <div className="col-lg-2 col-md-6 col-sm-6">
+                                        <div className="col-2">
                                             <div className="single-counter active text-center">
                                                 <span className="counter">{timeLeft.hours}</span>
-                                                <p>hours</p>
+                                                <p className="small">hrs</p>
                                             </div>
                                         </div>
-                                        <div className="col-lg-2 col-md-6 col-sm-6">
+                                        <div className="col-2 ">
                                             <div className="single-counter text-center">
                                                 <span className="counter">{timeLeft.minutes}</span>
-                                                <p>minutes</p>
+                                                <p className="small">min</p>
                                             </div>
                                         </div>
-                                        <div className="col-lg-3 col-md-6 col-sm-6">
+                                        <div className="col-3 ">
                                             <div className="single-counter text-center">
                                                 <span className="counter">{timeLeft.seconds}</span>
-                                                <p>seconds</p>
+                                                <p className="small">sec</p>
                                             </div>
                                         </div>
                                     </div>

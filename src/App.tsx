@@ -3,7 +3,6 @@ import './App.css';
 
 import OneSection from "./components/OneSection";
 import TwoSection from "./components/TwoSection";
-import ThreeSection from "./components/ThreeSection";
 import FourSectionNames from "./components/FourSectionNames";
 
 import firstPhoto from './assets/photos/bride.jpg';
