@@ -9,10 +9,10 @@ const GallerySection = () => {
                 {/*<div>*/}
                 {/*    <div className={"display-4"}>Theme 1 description</div>*/}
                 {/*</div>*/}
-                <div className="col-md-6 p-2 flex-grow- ">
+                <div className="col-md-6 p-2 flex-grow align-content-stretch ">
                     <img className=" rounded-3 img-fluid " src={theme1} alt={""}
                          style={{
-                             height: '800px',
+                             height: '300px',
                          }}
                     />
                 </div>

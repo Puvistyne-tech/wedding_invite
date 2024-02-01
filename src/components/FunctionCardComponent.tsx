@@ -1,6 +1,6 @@
 import React from "react";
 import shape from '../assets/gallery/shape2.png';
-import {FaHandPointRight, FaMapMarkerAlt} from "react-icons/fa";
+import {FaCocktail, FaHandPointRight, FaMapMarkerAlt} from "react-icons/fa";
 import photo1 from "../assets/photos/drancyMary.jpeg";
 
 interface FunctionCardComponentProps {
@@ -9,6 +9,10 @@ interface FunctionCardComponentProps {
     other?: string;
     mapLink?: string;
     mapLinkText?: string
+    tail?: string;
+    cocktailText?: string;
+    photoSource?: string;
+    backgroundColor?: string;
 }
 
 const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
@@ -16,13 +20,17 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                                                                          subtitle,
                                                                          other,
                                                                          mapLink,
-                                                                         mapLinkText
+                                                                         mapLinkText,
+                                                                         tail,
+                                                                         cocktailText,
+                                                                         photoSource,
+                                                                         backgroundColor= '#fff7f3',
                                                                      }) => {
     return (
         <div className="row col-md col-sm m-1"
 
              style={{
-                 backgroundColor: '#fff7f3',
+                 backgroundColor: backgroundColor,
              }}
         >
             <div className="col m-5"
@@ -35,7 +43,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                 {/*        borderRadius: '1rem',*/}
                 {/*        top: 5,*/}
                 {/*        left: 250,*/}
-                {/*        position: 'fixed',*/}
+                {/*        position: 'relative',*/}
                 {/*        zIndex: 0,*/}
                 {/*        height: '40vh',*/}
                 {/*        width: '30vh',*/}
@@ -57,11 +65,11 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                 <div className="card border-0 shadow-lg p-3"
                      style={{
                          borderRadius: '1rem',
-                         zIndex: 1,
+                         // zIndex: 1,
                      }}
                 >
                     <div
-                        className="card-body img-fluid card-img d-flex flex-column align-items-center justify-content-center"
+                        className="col-6 card-body img-fluid card-img d-flex flex-column align-items-center justify-content-center"
                         style={{
                             backgroundImage: `url(${shape})`,
                             // backgroundRepeat: 'no-repeat',
@@ -120,18 +128,42 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                         >
                             {other}
                         </div>
+                        <div className="card-text text-center h3 mt-5"
+                             style={{
+                                 color: '#794b44',
+                                 fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                 textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
+                             }}
+                        >
+                            {tail}
+                        </div>
+                        <div className="card-text text-center h3 mt-5"
+                             style={{
+                                 color: '#794b44',
+                                 fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                 textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
+                             }}
+                        >
+                            {cocktailText}
+                            {" "}
+                            {cocktailText && <FaCocktail
+                                color={'#32a6ef'}
+                                className={"mb-2"}
+                            />}
+
+                        </div>
                     </div>
 
                 </div>
 
             </div>
-            <div className={"col m-5 align-content-center align-self-center"}>
+            <div className={"col-12 m- align-content-center align-self-center"}>
                 <div className="card border-0 shadow-lg p-2"
                      style={{
                          borderRadius: '1rem',
                      }}
                 >
-                    <img className=" rounded-3 img-fluid" src={photo1} alt={""}/>
+                    <img className=" rounded-3 img-fluid" src={photoSource} alt={""}/>
 
                     {/*"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore*/}
                     {/*et dolore magna aliqua. Ut enim ad minim veniam,*/}
