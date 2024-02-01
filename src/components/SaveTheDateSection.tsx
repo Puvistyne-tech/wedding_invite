@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import DateSection from "./DateSection";
 
-import background from '../assets/gallery/section_bg3.png';
-import background2 from '../assets/gallery/section_bg1.png';
+import background from '../assets/gallery/section_bg5.jpg';
+import background2 from '../assets/gallery/section_bg5.jpg';
 
 interface SaveTheDateSectionProps {
     targetDate: string;
@@ -62,7 +62,11 @@ const SaveTheDateSection = ({targetDate}: SaveTheDateSectionProps) => {
                              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
                          }}
                     >
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center"
+                            style={{
+                                color: '#f8c2f7',
+                            }}
+                        >
                             <div className="col-lg-12 col-md-12">
                                 <div className="count-down-wrapper"
                                      data-background="assets/img/gallery/section_bg2.png">

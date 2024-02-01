@@ -54,8 +54,15 @@ function App() {
 
                     <TwoSection/>
                 </div>
+                {/*<div className="Row">*/}
+                {/*    <ThreeSection/>*/}
+                {/*</div>*/}
+
                 <div className="Row">
-                    <ThreeSection/>
+                    <HeadingSection
+                        title={"Nous"}
+                        subtitle={"A new chapter begins..."}
+                    />
                 </div>
                 <div className="Row">
                     <FourSectionNames
@@ -109,11 +116,11 @@ function App() {
                 <div className="Row">
                     <img src={underline} alt=""
                          className="img-fluid p-3 m-2"
-                            style={{
-                                width: '100%',
-                                // marginTop: '5%',
-                                // marginBottom: '5%',
-                            }}
+                         style={{
+                             width: '100%',
+                             // marginTop: '5%',
+                             // marginBottom: '5%',
+                         }}
                     />
                 </div>
                 <div className="Row">
@@ -126,6 +133,16 @@ function App() {
                         photoSource={sallePhoto}
                         // tail={"Mairie de Drancy"}
                     />
+                </div>
+
+                <div className="Row">
+                    <HeadingSection
+                        title={"Theme of the day"}
+                        subtitle={"Reception - pastel"}
+                    />
+                </div>
+                <div className="Row">
+                    <ThemeSection/>
                 </div>
             </div>
         </div>

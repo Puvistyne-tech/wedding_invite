@@ -1,5 +1,5 @@
 import React from "react";
-import background from '../assets/gallery/section_bg2.png';
+import background from '../assets/gallery/section_bg2.jpg';
 
 interface HeadingSectionProps {
     title: string;
@@ -12,13 +12,15 @@ const HeadingSection: React.FC<HeadingSectionProps> = ({ title, subtitle }) => {
             style={{
                 backgroundImage: `url(${background})`,
                 backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
                 //height: '15vh', // Adjust the height as needed
             }}
         >
             <h1
                 className={"display-2 text-center font-weight-bold pt-2 mt-2"}
                 style={{
-                    color: '#fdfdfd',
+                    color: '#f58484',
                     fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
                     textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
                 }}
