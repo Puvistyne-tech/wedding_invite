@@ -1,12 +1,7 @@
 import React from "react";
 import shape from '../assets/gallery/shape2.png';
-import {Fingerprint} from "react-bootstrap-icons";
 import {FaHandPointRight, FaMapMarkerAlt} from "react-icons/fa";
-import MapLink from "./MapLink";
 import photo1 from "../assets/photos/drancyMary.jpeg";
-// import background from '../assets/gallery/section_bg1.png';
-
-// import flower2 from '../assets/gallery/from-top.png';
 
 interface FunctionCardComponentProps {
     title: string;
