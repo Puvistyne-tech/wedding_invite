@@ -9,7 +9,7 @@ const TwoSection = () => {
     return (
         <Carousel indicators={false} fade={true} controls={false} draggable={true} >
             <Carousel.Item
-                interval={1000}
+                interval={800}
             >
                 <img
                     className="d-block w-100 object-fit-cover"
