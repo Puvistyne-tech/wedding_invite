@@ -1,5 +1,5 @@
 import React from "react";
-import shape from '../assets/gallery/shape2.png';
+import shape from '../assets/gallery/shape2.jpg';
 import {FaCocktail, FaHandPointRight, FaMapMarkerAlt} from "react-icons/fa";
 
 
@@ -24,16 +24,16 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                                                                          tail,
                                                                          cocktailText,
                                                                          photoSource,
-                                                                         backgroundColor= '#fff7f3',
+                                                                         backgroundColor= '#ffffff',
                                                                      }) => {
     return (
-        <div className="row col-md col-sm m-1"
+        <div className="row col-md col-sm m-1 pb-3"
 
              style={{
                  backgroundColor: backgroundColor,
              }}
         >
-            <div className="col m-5"
+            <div className="col m-3"
                  style={{}}
             >
                 {/*<img*/}
@@ -62,9 +62,9 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                 {/*        width: '20vh',*/}
                 {/*    }}*/}
                 {/*/>*/}
-                <div className="card border-0 shadow-lg p-3"
+                <div className="card border-0 shadow-lg p-"
                      style={{
-                         borderRadius: '1rem',
+                         borderRadius: '2rem',
                          // zIndex: 1,
                      }}
                 >

@@ -50,7 +50,7 @@ const SaveTheDateSection = ({targetDate}: SaveTheDateSectionProps) => {
                          backgroundImage: `url(${background2})`,
                      }}
                 >
-                    <div className="m-4 img-fluid rounded-1 col p-4 border-4 shadow-lg text-bg-primary text-center"
+                    <div className="m-2 img-fluid rounded-1 col p-2 border-4 shadow-lg text-bg-primary text-center"
                          style={{
                              backgroundImage: `url(${background})`,
                              backgroundRepeat: 'no-repeat',
@@ -58,7 +58,7 @@ const SaveTheDateSection = ({targetDate}: SaveTheDateSectionProps) => {
                              // height: '15vh',
                              backgroundPosition: 'center',
                              fontFamily: '"Caveat", cursive', // Caveat font
-                             fontSize: '2rem',
+                             fontSize: '1.5rem',
                              textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)'
                          }}
                     >

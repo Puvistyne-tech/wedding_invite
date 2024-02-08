@@ -17,6 +17,7 @@ import drancyMary from "./assets/photos/drancyMary.jpeg";
 import sallePhoto from "./assets/photos/salle.jpeg";
 import underline from "./assets/gallery/tittle_img.png";
 
+
 function App() {
     return (
         <div className="App">
@@ -36,7 +37,7 @@ function App() {
                 <div className="Row">
 
                     <OneSection
-                        videoId="RTAnY89maLU"
+                        videoId="Y8sJKB29PKg"
                         heading="Prash & Elsa"
                         description="We are getting married!"
                         footer={"Save the date    -    18 May 2024"}
@@ -50,22 +51,31 @@ function App() {
 
 
                 </div>
-                <div className="Row">
-                    zegze zpeigpzje g
-                    zegze
-                    g
-                    ze
+                {/*<div className="Row">*/}
+                {/*    zegze zpeigpzje g*/}
+                {/*    zegze*/}
+                {/*    g*/}
+                {/*    ze*/}
 
-                    <audio autoPlay={true} loop>
-                        <source src="./assets/video/Interlude%20Love%20vs%20Bad.mp3" type="audio/mpeg"/>
-                        Your browser does not support the audio element.
-                    </audio>
-                    <audio id="backgroundMusic" loop autoPlay>
-                        <source src="./assets/video/Interlude%20Love%20vs%20Bad.mp3" type="audio/mp3"/>
-                        Your browser does not support the audio element.
-                    </audio>
 
-                </div>
+                {/*    <iframe width="200" height="200" src="https://www.youtube.com/embed/UjUQgKVME-Q"*/}
+                {/*            title="Apple Vision Pro vs Meta Quest 3: Which is the better Value?" frameBorder="0"*/}
+                {/*            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
+                {/*            allowFullScreen></iframe>*/}
+                {/*    <iframe width="100" height="100" src="https://www.youtube.com/embed/RTAnY89maLU"*/}
+                {/*            title="8 février 2024" frameBorder="0"*/}
+                {/*            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
+                {/*            allowFullScreen></iframe>*/}
+                {/*    <audio autoPlay={true} loop>*/}
+                {/*        <source src={backMusic} type="audio/mpeg"/>*/}
+                {/*        Your browser does not support the audio element.*/}
+                {/*    </audio>*/}
+                {/*    <audio id="backgroundMusic" loop autoPlay>*/}
+                {/*        <source src="assets/videos/music.mp3" type="audio/mp3"/>*/}
+                {/*        Your browser does not support the audio element.*/}
+                {/*    </audio>*/}
+
+                {/*</div>*/}
                 <div className="Row">
 
                     <TwoSection/>
@@ -126,7 +136,7 @@ function App() {
                         mapLinkText={"Mairie de Drancy"}
                         tail={"RDV sur place à 13H00"}
                         photoSource={drancyMary}
-                        backgroundColor={'#d6f5fc'}
+                        backgroundColor={'#dadcde'}
                     />
                 </div>
                 <div className="Row">
