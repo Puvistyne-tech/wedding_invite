@@ -26,7 +26,7 @@ const OneSection: React.FC<VideoSectionProps> = ({videoId, heading, description,
             modestbranding: 1,
             rel: 0,
             showinfo: 0,
-            mute: 1,
+            mute: 0,
 
         },
     };
