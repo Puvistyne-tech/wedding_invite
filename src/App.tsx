@@ -16,6 +16,7 @@ import ThemeSection from "./components/ThemeSection";
 import drancyMary from "./assets/photos/drancyMary.jpeg";
 import sallePhoto from "./assets/photos/salle.jpeg";
 import underline from "./assets/gallery/tittle_img.png";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -169,6 +170,19 @@ function App() {
                 </div>
                 <div className="Row">
                     <ThemeSection/>
+                </div>
+                {/*<div className="Row bg-dark-subtle pt-2">*/}
+                {/*    <div className="container small">*/}
+                {/*        <footer className="row">*/}
+                {/*            <div className="col-12 text-center">*/}
+                {/*                <p className="h small">©PuvistyneTech</p>*/}
+                {/*                <p className="small">Contact me at puvistien@gmail.com / +33 7 66 07 21 89</p>*/}
+                {/*            </div>*/}
+                {/*        </footer>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+                <div className="Row">
+                    <Footer/>
                 </div>
             </div>
         </div>
