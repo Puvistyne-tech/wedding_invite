@@ -24,7 +24,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                                                                          tail,
                                                                          cocktailText,
                                                                          photoSource,
-                                                                         backgroundColor= '#ffffff',
+                                                                         backgroundColor = '#ffffff',
                                                                      }) => {
     return (
         <div className="row col-md col-sm m-1 pb-3"
@@ -72,9 +72,9 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                         className="col-6 card-body img-fluid card-img d-flex flex-column align-items-center justify-content-center"
                         style={{
                             backgroundImage: `url(${shape})`,
-                            // backgroundRepeat: 'no-repeat',
+                            //     // backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
-                            // backgroundPosition: 'center',
+                            //     // backgroundPosition: 'center',
                             height: '60vh', // Adjust the height as needed
                         }}
                     >
@@ -128,7 +128,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                         >
                             {other}
                         </div>
-                        <div className="card-text text-center h3 mt-5"
+                        <div className="card-text text-center h2 mt-5"
                              style={{
                                  color: '#794b44',
                                  fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',

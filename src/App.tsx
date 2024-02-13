@@ -134,7 +134,7 @@ function App() {
                         mapLinkText={"Mairie de Drancy"}
                         tail={"RDV on site at 1:00 p.m."}
                         photoSource={drancyMary}
-                        backgroundColor={'#dadcde'}
+                        // backgroundColor={'#dadcde'}
                     />
                 </div>
                 <div className="Row">
