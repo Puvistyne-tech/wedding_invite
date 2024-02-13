@@ -86,8 +86,8 @@ function App() {
 
                 <div className="Row">
                     <HeadingSection
-                        title={"Nous"}
-                        subtitle={"A new chapter begins..."}
+                        title={"A new chapter begins..."}
+                        // subtitle={"A new chapter begins..."}
                     />
                 </div>
                 <div className="Row">
@@ -101,8 +101,8 @@ function App() {
 
                 <div className="Row">
                     <HeadingSection
-                        title={"Nous"}
-                        subtitle={"A new chapter begins..."}
+                        // title={"Nous"}
+                        title={"A new chapter begins..."}
                     />
                 </div>
 
@@ -131,10 +131,10 @@ function App() {
                     <FunctionCardComponent
                         title={"Mairie de Drancy"}
                         subtitle={"18 May 2024"}
-                        other={"point de départ : 97 avenue joffre 93700 Drancy à 12H00"}
+                        other={"starting point : 97 avenue joffre 93700 Drancy at 12H00"}
                         mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66cbc979f09a9:0x7a7398447e630999?sa=X&ved=2ahUKEwi-sKK9sfuDAxWkTKQEHW6CCcIQ4kB6BAhAEAA&hl=en"}
                         mapLinkText={"Mairie de Drancy"}
-                        tail={"RDV sur place à 13H00"}
+                        tail={"RDV on site at 1:00 p.m."}
                         photoSource={drancyMary}
                         backgroundColor={'#dadcde'}
                     />
@@ -153,8 +153,8 @@ function App() {
                     <FunctionCardComponent
                         title={"Reception"}
                         subtitle={"18 May 2024"}
-                        cocktailText={"vin d'honneur à partir de 18h"}
-                        mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66cbc979f09a9:0x7a7398447e630999?sa=X&ved=2ahUKEwi-sKK9sfuDAxWkTKQEHW6CCcIQ4kB6BAhAEAA&hl=en"}
+                        cocktailText={"reception from 6 p.m."}
+                        mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e60adcec7965c1:0xc27adb90a9518767?sa=X&ved=2ahUKEwiA0MHYj6iEAxU7UKQEHZBJDkUQ4kB6BAgQEAA"}
                         mapLinkText={"Salle aux Tulipes"}
                         photoSource={sallePhoto}
                         // tail={"Mairie de Drancy"}
