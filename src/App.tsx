@@ -31,10 +31,7 @@ function App() {
                 <meta name="keywords" content="Prash Elsa Wedding"/>
                 <meta name="author" content="Puvistyne"/>
             </Helmet>
-            <div className="" style={{
-                //backgroundColor: '#fff7f3',
-            }}>
-
+            <div>
                 <div className="Row">
 
                     <OneSection
@@ -155,6 +152,7 @@ function App() {
                         title={"Reception"}
                         subtitle={"18 May 2024"}
                         cocktailText={"reception from 6 p.m."}
+                        other={"Salle aux Tulipes, 8 Rue des Bâtisseurs, 91560 Crosne, France"}
                         mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e60adcec7965c1:0xc27adb90a9518767?sa=X&ved=2ahUKEwiA0MHYj6iEAxU7UKQEHZBJDkUQ4kB6BAgQEAA"}
                         mapLinkText={"Salle aux Tulipes"}
                         photoSource={sallePhoto}
