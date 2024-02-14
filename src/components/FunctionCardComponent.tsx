@@ -31,37 +31,13 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
 
              style={{
                  backgroundColor: backgroundColor,
+                 height: '100%',
+
              }}
         >
             <div className="col m-3"
                  style={{}}
             >
-                {/*<img*/}
-                {/*    src={flower1}*/}
-                {/*    alt="..."*/}
-                {/*    style={{*/}
-                {/*        borderRadius: '1rem',*/}
-                {/*        top: 5,*/}
-                {/*        left: 250,*/}
-                {/*        position: 'relative',*/}
-                {/*        zIndex: 0,*/}
-                {/*        height: '40vh',*/}
-                {/*        width: '30vh',*/}
-                {/*    }}*/}
-                {/*/>*/}
-                {/*<img*/}
-                {/*    src={flower2}*/}
-                {/*    alt="..."*/}
-                {/*    style={{*/}
-                {/*        borderRadius: '1rem',*/}
-                {/*        top: 140,*/}
-                {/*        left: -100,*/}
-                {/*        position: 'relative',*/}
-                {/*        zIndex: 0,*/}
-                {/*        height: '20vh',*/}
-                {/*        width: '20vh',*/}
-                {/*    }}*/}
-                {/*/>*/}
                 <div className="card border-0 shadow-lg p-"
                      style={{
                          borderRadius: '2rem',
@@ -72,13 +48,13 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                         className="col-6 card-body img-fluid card-img d-flex flex-column align-items-center justify-content-center"
                         style={{
                             backgroundImage: `url(${shape})`,
-                            //     // backgroundRepeat: 'no-repeat',
+                            backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
-                            //     // backgroundPosition: 'center',
-                            height: '60vh', // Adjust the height as needed
+                            backgroundPosition: 'center',
+                            height: '80vh', // Adjust the height as needed
                         }}
                     >
-                        <div className="card-title text-center display-3 "
+                        <div className="card-title text-center display-3"
                              style={{
                                  color: '#dc6651',
                                  fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
@@ -173,12 +149,8 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                 >
                     <img className=" rounded-3 img-fluid" src={photoSource} alt={""}/>
 
-                    {/*"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore*/}
-                    {/*et dolore magna aliqua. Ut enim ad minim veniam,*/}
-                    {/*quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.*/}
                 </div>
             </div>
-
 
         </div>
     );
