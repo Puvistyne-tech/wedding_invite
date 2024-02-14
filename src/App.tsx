@@ -17,6 +17,7 @@ import drancyMary from "./assets/photos/drancyMary.jpeg";
 import sallePhoto from "./assets/photos/salle.jpeg";
 import underline from "./assets/gallery/tittle_img.png";
 import Footer from "./components/Footer";
+import backPhoto from "./assets/gallery/section_bg1.png";
 
 
 function App() {
@@ -31,7 +32,16 @@ function App() {
                 <meta name="keywords" content="Prash Elsa Wedding"/>
                 <meta name="author" content="Puvistyne"/>
             </Helmet>
-            <div>
+            <div
+                style={{
+                    backgroundImage: `url(${backPhoto})`,
+                    // backgroundSize: 'cover',
+                    backgroundRepeat: 'repeat',
+                    // backgroundPosition: 'center',
+                    //height: '15vh', // Adjust the height as needed
+
+                }}
+            >
                 <div className="Row">
 
                     <OneSection
@@ -41,6 +51,13 @@ function App() {
                         footer={"Save the date    -    18 May 2024"}
                     />
 
+                </div>
+                <div className="Row">
+                    <HeadingSection
+                        title={"Save the Date"}
+                        subtitle={"18 May 2024"}
+
+                    />
                 </div>
                 <div className="Row">
                     <SaveTheDateSection
@@ -97,13 +114,23 @@ function App() {
                     />
                 </div>
 
+                {/*<div className="Row">*/}
+                {/*    <HeadingSection*/}
+                {/*        // title={"Nous"}*/}
+                {/*        title={"A new chapter begins..."}*/}
+                {/*    />*/}
+                {/*</div>*/}
+
                 <div className="Row">
-                    <HeadingSection
-                        // title={"Nous"}
-                        title={"A new chapter begins..."}
+                    <img src={underline} alt=""
+                         className="img-fluid p-3 m-2"
+                         style={{
+                             width: '100%',
+                             // marginTop: '5%',
+                             // marginBottom: '5%',
+                         }}
                     />
                 </div>
-
                 <div className="Row">
                     <GallerySection/>
                 </div>
@@ -129,7 +156,7 @@ function App() {
                     <FunctionCardComponent
                         title={"Mairie de Drancy"}
                         subtitle={"18 May 2024"}
-                        other={"starting point : 97 avenue joffre 93700 Drancy at 12H00"}
+                        other={"starting : 97 avenue joffre 93700 Drancy at 12H00"}
                         mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66cbc979f09a9:0x7a7398447e630999?sa=X&ved=2ahUKEwi-sKK9sfuDAxWkTKQEHW6CCcIQ4kB6BAhAEAA&hl=en"}
                         mapLinkText={"Mairie de Drancy"}
                         tail={"RDV on site at 1:00 p.m."}

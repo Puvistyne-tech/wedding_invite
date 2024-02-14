@@ -27,7 +27,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                                                                          backgroundColor = '#ffffff',
                                                                      }) => {
     return (
-        <div className="row col-md col-sm m-1 pb-3"
+        <div className="row col-md col-sm m1 p3"
 
              style={{
                  backgroundColor: backgroundColor,
@@ -82,6 +82,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                              style={{
                                  color: '#dc6651',
                                  fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                 // fontWeight: 'bold',
                                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
                              }}
                         >
@@ -91,6 +92,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                              style={{
                                  color: '#dc6651',
                                  fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                 // fontWeight: 'bold',
                                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
                              }}
                         >
@@ -101,6 +103,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                              style={{
                                  fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
                                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
+                                 // fontWeight: 'bold',
                              }}
                         >
                             <FaHandPointRight
@@ -119,39 +122,44 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
                             />
                             {" "}
                         </div>
-                        <div className="card-text text-center h3 mt-5"
+                        <div className="card-text text-center h2 mt-5 m-4"
                              style={{
                                  color: '#dc6651',
                                  fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                 // fontWeight: 'bold',
                                  textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
                              }}
                         >
                             {other}
                         </div>
-                        <div className="card-text text-center h2 mt-5"
-                             style={{
-                                 color: '#794b44',
-                                 fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
-                                 textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
-                             }}
-                        >
-                            {tail}
-                        </div>
-                        <div className="card-text text-center h3 mt-5"
-                             style={{
-                                 color: '#794b44',
-                                 fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
-                                 textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
-                             }}
-                        >
-                            {cocktailText}
-                            {" "}
-                            {cocktailText && <FaCocktail
-                                color={'#32a6ef'}
-                                className={"mb-2"}
-                            />}
+                        {tail &&
+                            <div className="card-text text-center h1 mt-5"
+                                 style={{
+                                     color: '#794b44',
+                                     fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                     // textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
+                                 }}
+                            >
+                                {tail}
+                            </div>
+                        }
+                        {cocktailText &&
+                            <div className="card-text text-center display-5 mt-5"
+                                 style={{
+                                     color: '#794b44',
+                                     fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
+                                     // textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
+                                 }}
+                            >
+                                {cocktailText}
+                                {" "}
+                                <FaCocktail
+                                    color={'#32a6ef'}
+                                    className={"mb-2"}
+                                />
 
-                        </div>
+                            </div>
+                        }
                     </div>
 
                 </div>

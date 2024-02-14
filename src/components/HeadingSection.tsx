@@ -28,9 +28,9 @@ const HeadingSection: React.FC<HeadingSectionProps> = ({ title, subtitle }) => {
 
             {subtitle && <h2
 
-            className={"display-6 text-center "}
+            className={"display-5 text-center mb-3"}
             style={{
-                color: '#ffe1c1',
+                color: '#74bdf8',
                 fontFamily: ' "Dancing Script", cursive , "Caveat", cursive',
                 textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
             }}
