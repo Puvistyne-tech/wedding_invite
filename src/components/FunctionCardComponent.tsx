@@ -30,7 +30,7 @@ const FunctionCardComponent: React.FC<FunctionCardComponentProps> = ({
         <div className="row col-md col-sm m1 p3"
 
              style={{
-                 backgroundColor: backgroundColor,
+                 // backgroundColor: backgroundColor,
                  height: '100%',
 
              }}
