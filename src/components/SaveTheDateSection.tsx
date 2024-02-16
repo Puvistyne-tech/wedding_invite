@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 import DateSection from "./DateSection";
+import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
+import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 
-import background from '../assets/gallery/section_bg5.jpg';
-import background2 from '../assets/gallery/section_bg5.jpg';
+import './clocl.css';
 
 interface SaveTheDateSectionProps {
     targetDate: string;
@@ -47,60 +48,27 @@ const SaveTheDateSection = ({targetDate}: SaveTheDateSectionProps) => {
             {Object.keys(timeLeft).length > 0 && (
                 <div className="border-2"
                      style={{
-                         backgroundImage: `url(${background2})`,
+                         color: 'rgba(112,112,112,0.5)',
                      }}
                 >
-                    <div className="m-2 img-fluid rounded-1 col p-2 border-4 shadow-lg text-bg-primary text-center"
+                    <div className="m-2 shadow-lg"
                          style={{
-                             backgroundImage: `url(${background})`,
-                             backgroundRepeat: 'no-repeat',
-                             backgroundSize: 'cover',
-                             // height: '15vh',
-                             backgroundPosition: 'center',
+                             color: 'rgba(112,112,112,0.5)',
                              fontFamily: '"Caveat", cursive', // Caveat font
-                             fontSize: '1.5rem',
-                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)'
+                             fontSize: '2rem',
+                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)',
+                             display: 'flex',
+                             flexDirection: 'column',
+                             alignItems: 'center', // Center items horizontally
+                             justifyContent: 'center', // Center items vertically
                          }}
                     >
-                        <div className="row justify-content-center"
-                            style={{
-                                color: '#ffffff',
-                            }}
-                        >
-                            <div className="col-12 col-d-12">
-                                <div className="count-down-wrapper"
-                                     data-background="assets/img/gallery/section_bg2.png">
-                                    <div className="row justify-content-between">
-                                        <div className="col-3 ">
-                                            <div className="single-counter text-center">
-                                                <span className="counter">{timeLeft.days}</span>
-                                                <p className="small">days</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="single-counter active text-center">
-                                                <span className="counter">{timeLeft.hours}</span>
-                                                <p className="small">hrs</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-2 ">
-                                            <div className="single-counter text-center">
-                                                <span className="counter">{timeLeft.minutes}</span>
-                                                <p className="small">min</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-3 ">
-                                            <div className="single-counter text-center">
-                                                <span className="counter">{timeLeft.seconds}</span>
-                                                <p className="small">sec</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="count-down-wrapper ">
+                            <FlipClockCountdown
+                                className='flip-clock text-light text-center border-1'
+                                to={'2024-05-18T14:00:00.635Z'}
+                            />
                         </div>
-
-
                         <DateSection
                             text={"Save the date to your calendar"}
                         />

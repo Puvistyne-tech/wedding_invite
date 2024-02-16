@@ -1,5 +1,5 @@
 import React from "react";
-import background from '../assets/gallery/section_bg1.png';
+import background from '../assets/gallery/section_bg6.png';
 interface FourSectionNamesProps {
     first: string;
     firstPhoto: string;
@@ -12,6 +12,9 @@ const FourSectionNames = ({first, firstPhoto, second, secondPhoto}: FourSectionN
         <div className="d-flex flex-column justify-content-center align-items-center"
         style={{
             backgroundImage: `url(${background})`,
+            // backgroundSize: 'cover',
+            // backgroundRepeat: 'repeat-y', // Repeat vertically
+            // backgroundPosition: 'center',
         }}
         >
             {/* First row for the bride */}
@@ -19,7 +22,7 @@ const FourSectionNames = ({first, firstPhoto, second, secondPhoto}: FourSectionN
                 <div className="col-6 p-3">
                     <h2 className="mr-3 display-4"
                         style={{
-                            color: '#aaa1e4',
+                            color: '#dc6e5a',
                             fontFamily: '"GERALDINE", cursive', // Change the font family to GERALDINE
                             fontWeight: 'normal', // Set the font weight to normal
                             textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability

@@ -45,7 +45,7 @@ const DateSection = ({text}: { text?: string }) => {
 
     return (
 
-        <div className="btn btn-light rounded-5" onClick={saveDateToCalendar}>
+        <div className="btn btn-light shadow-lg rounded-5" onClick={saveDateToCalendar}>
             {
                 text ?
                     <>
