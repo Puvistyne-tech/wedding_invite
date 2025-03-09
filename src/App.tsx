@@ -17,13 +17,7 @@ import backPhoto from "./assets/gallery/section_bg1.png";
 import card from "./assets/photos/card.jpg";
 import card1 from "./assets/photos/card1.jpg";
 import card2 from "./assets/photos/card2.jpg";
-import receptionInvitation from "./assets/photos/receptionInvitation.png";
-import theme from "./assets/photos/theme.png";
-import program from "./assets/photos/program.png";
-import tenue from "./assets/photos/tenue.png";
 import MapComponent from './components/MapComponent';
-
-
 
 function App() {
     return (
