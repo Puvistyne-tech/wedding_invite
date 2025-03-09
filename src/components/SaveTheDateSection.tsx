@@ -3,6 +3,7 @@ import DateSection from "./DateSection";
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 
+
 import './clocl.css';
 
 interface SaveTheDateSectionProps {
@@ -66,7 +67,7 @@ const SaveTheDateSection = ({targetDate}: SaveTheDateSectionProps) => {
                         <div className="count-down-wrapper ">
                             <FlipClockCountdown
                                 className='flip-clock text-light text-center border-1'
-                                to={'2024-05-18T14:00:00.635Z'}
+                                to={'2025-06-27T14:00:00.635Z'}
                             />
                         </div>
                         <DateSection

@@ -27,12 +27,12 @@ function App() {
     return (
         <div className="App">
             <Helmet>
-                <title>Prash Elsa Wedding</title>
-                <meta name="description" content="Prash Elsa Wedding"/>
-                <meta name="og:description" content="Prash Elsa Wedding"/>
-                <meta name="og:title" content="Prash Elsa Wedding"/>
+                <title>Kevin Hoshnar Sayanthini Wedding</title>
+                <meta name="description" content="Kevin Hoshnar Sayanthini Wedding"/>
+                <meta name="og:description" content="Kevin Hoshnar Sayanthini Wedding"/>
+                <meta name="og:title" content="Kevin Hoshnar Sayanthini Wedding"/>
                 <meta name="og:image" content={"src/assets/photos/IMG-20231224-WA0014.jpg"}/>
-                <meta name="keywords" content="Prash Elsa Wedding"/>
+                <meta name="keywords" content="Kevin Hoshnar Sayanthini Wedding"/>
                 <meta name="author" content="Puvistyne"/>
             </Helmet>
             <div
@@ -53,9 +53,9 @@ function App() {
 
                     <OneSection
                         videoId="Y8sJKB29PKg"
-                        heading="Prash & Elsa"
+                        heading="Kevin & Sayanthini"
                         description="We are getting married!"
-                        footer={"Save the date    -    18 May 2024"}
+                        footer={"Save the date    -    27 June 2025"}
                     />
 
                 </div>
@@ -68,7 +68,7 @@ function App() {
                 {/*</div>*/}
                 <div className="Row">
                     <SaveTheDateSection
-                        targetDate="2024-05-18"
+                        targetDate="2025-06-27"
                     />
 
 
@@ -115,9 +115,9 @@ function App() {
                 </div>
                 <div className="Row">
                     <FourSectionNames
-                        first="Mr.Prash Ragavan"
+                        first="Mr.Kevin Hoshnar"
                         firstPhoto={firstPhoto}
-                        second="Ms.Elsa Benserade"
+                        second="Ms.Sayanthini"
                         secondPhoto={secondPhoto}
                     />
                 </div>
@@ -187,8 +187,8 @@ function App() {
 
                 <div className="Row">
                     <PhotoCardComponent
-                        mapLink={"https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66cbc979f09a9:0x7a7398447e630999?sa=X&ved=2ahUKEwi-sKK9sfuDAxWkTKQEHW6CCcIQ4kB6BAhAEAA&hl=en"}
-                        mapLinkText={"Mairie de Drancy"}
+                        mapLink={"https://www.google.com/maps/place/Town+of+Blanc-Mesnil/@48.9387543,2.4635482,18.65z/data=!4m6!3m5!1s0x47e6135a25ec43b1:0x894284efc436966!8m2!3d48.938859!4d2.46406!16s%2Fg%2F1tcy3lyv?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D"}
+                        mapLinkText={"Mairie de Blanc Mesnil"}
                         photoSource={drancyMaryInvitation}
                     />
                 </div>
