@@ -17,7 +17,7 @@ const ThreeSection = () => {
                 color: '#dc6651',
                 fontFamily: '"Great Vibes", cursive , "Dancing Script", cursive , "Caveat", cursive',
                 textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for readability
-            }}>Prash Weds Elsa</h1>
+            }}>Kevin & Sayanthini</h1>
             <img src={underline} alt=""/>
         </div>
     );
