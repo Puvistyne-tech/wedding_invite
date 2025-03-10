@@ -220,6 +220,12 @@ function App() {
                         photoSource={card2}
                     />
                 </div>
+
+                <HeadingSection
+                    title={"Join Us At Lana Events"}
+                    subtitle={"18 Rue des Artisans, 95190 Goussainville"}
+                    canCopy={true}
+                />
                 <div className="Row">
                     <MapComponent address="https://www.google.com/maps/place/LANA+EVENTS/@49.0189359,2.4664113,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6416af16c83a1:0x8ff691d333704f86!8m2!3d49.0189324!4d2.4689862!16s%2Fg%2F11q22jf3yr?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" />
                 </div>

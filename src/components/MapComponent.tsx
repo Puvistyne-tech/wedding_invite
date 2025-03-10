@@ -54,11 +54,11 @@ const MapComponent: React.FC<MapComponentProps> = ({ address }) => {
       <div className="row flex-column justify-content-center align-items-center">
         <div className="col-10">
           <div className="text-center mb-4">
-            <h2 style={titleStyle}>Join Us At Lana Events</h2>
+            {/* <h2 style={titleStyle}>Join Us At Lana Events</h2> */}
             <p style={descriptionStyle}>
               Celebrate our special day at this magnificent venue, where elegance meets celebration.
-              <br />
-              18 Rue des Artisans, 95190 Goussainville
+              {/* <br /> */}
+              {/* 18 Rue des Artisans, 95190 Goussainville */}
             </p>
           </div>
           <div style={{ position: 'relative' }}>
