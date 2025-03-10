@@ -12,7 +12,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ address }) => {
     borderRadius: "8px",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     cursor: "pointer",
-    position: "relative" as const // Need to specify type for position
+    position: "relative" as const
   };
 
   const overlayStyles = {
@@ -25,16 +25,24 @@ const MapComponent: React.FC<MapComponentProps> = ({ address }) => {
     zIndex: 2
   };
 
-  // Convert regular Google Maps URL to embed URL
+  const titleStyle = {
+    color: '#dc6651',
+    fontFamily: '"Great Vibes", cursive',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
+    marginBottom: '0.5rem'
+  };
+
+  const descriptionStyle = {
+    color: '#794b44',
+    fontFamily: '"Dancing Script", cursive',
+    fontSize: '1.2rem',
+    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
+    marginBottom: '1.5rem'
+  };
+
   const getEmbedUrl = (url: string) => {
-    // Extract the place coordinates and zoom level from the URL
-    const match = url.match(/@(-?\d+\.\d+),(-?\d+\.\d+),(\d+\.?\d*)z/);
-    if (match) {
-      const [, lat, lng] = match;
-      return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.3035355265095!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDU2JzE5LjkiTiAywrAyNyc1MC42IkU!5e0!3m2!1sen!2sfr!4v1624981837886!5m2!1sen!2sfr`;
-    }
-    // If URL doesn't match the pattern, use it as is but replace /maps/ with /maps/embed/
-    return url.replace('/maps/', '/maps/embed/');
+    // Use exact coordinates for LANA EVENTS
+    return `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=LANA+EVENTS&center=49.0189324,2.4689862&zoom=17`;
   };
 
   const handleMapClick = () => {
@@ -45,6 +53,14 @@ const MapComponent: React.FC<MapComponentProps> = ({ address }) => {
     <div style={{ width: "100%" }}>
       <div className="row flex-column justify-content-center align-items-center">
         <div className="col-10">
+          <div className="text-center mb-4">
+            <h2 style={titleStyle}>Join Us At Lana Events</h2>
+            <p style={descriptionStyle}>
+              Celebrate our special day at this magnificent venue, where elegance meets celebration.
+              <br />
+              18 Rue des Artisans, 95190 Goussainville
+            </p>
+          </div>
           <div style={{ position: 'relative' }}>
             <div 
               onClick={handleMapClick} 
@@ -60,8 +76,8 @@ const MapComponent: React.FC<MapComponentProps> = ({ address }) => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-            <div className="text-center mt-2">
-              <small className="text-muted">
+            <div className="text-center mt-3">
+              <small className="text-muted" style={{ fontFamily: '"Caveat", cursive' }}>
                 Click anywhere on the map to open in Google Maps for navigation
               </small>
             </div>
